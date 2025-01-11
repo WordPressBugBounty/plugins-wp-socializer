@@ -3,8 +3,8 @@ Contributors: vaakash
 Donate link: https://www.paypal.me/vaakash/6
 Tags: social media, share, social sharing, share buttons, social share
 Requires at least: 5.0
-Tested up to: 6.6.1
-Stable tag: 7.8
+Tested up to: 6.7.1
+Stable tag: 7.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires PHP: 5.3
@@ -35,7 +35,7 @@ WP Socializer is feature rich with which you can display share/follow buttons an
 WP Socializer includes all the popular social network icons you need to add sharing and follow buttons on your website for FREE!
 
 - Facebook, X, Pinterest, WhatsApp, LinkedIn, Instagram, Email, SMS, Phone, Copy link, **Comments button** and more
-- **More icons** - Add to favorites, Behance, Bitbucket, Blogger, CodePen, Comments, Delicious, DeviantArt, Digg, Dribbble, Facebook messenger, Flickr, Github, Google, Hacker News, Medium, PayPal, PDF, Pocket, Print, Reddit, RSS, Short link, Snapchat, Soundcloud, StackOverflow, Quora, Telegram, Tumblr, Vimeo, VKontakte, wechat, Xing, Yahoo! Mail, Youtube, Weibo, Line, Mix, Odnoklassniki, Renren, Skype, Telephone/call button, Houzz, Etsy, Discord, Patreon, Viber, TikTok, Flipboard, Mastodon, Threads, Native OS share menu (Web share API)
+- **More icons** - Add to favorites, Behance, Bitbucket, Blogger, CodePen, Comments, Delicious, DeviantArt, Digg, Dribbble, Facebook messenger, Flickr, Github, Google, Hacker News, Medium, PayPal, PDF, Pocket, Print, Reddit, RSS, Short link, Snapchat, Soundcloud, StackOverflow, Quora, Telegram, Tumblr, Vimeo, VKontakte, wechat, Xing, Yahoo! Mail, Youtube, Weibo, Line, Mix, Odnoklassniki, Renren, Skype, Telephone/call button, Houzz, Etsy, Discord, Patreon, Viber, TikTok, Flipboard, Mastodon, Threads, Native OS share menu (Web share API), Podcast, Bluesky
 
 ### Multiple Icon Shapes, Sizes and Colors to Choose from
 
@@ -218,6 +218,15 @@ Please refer [this page](https://www.aakashweb.com/docs/wp-socializer/) for the 
 
 
 ## Changelog
+
+### 7.9
+* New: Support for Bluesky icon.
+* New: Support for Podcast icon.
+* Fix: Social profile links in follow bar are set with rel="me" value.
+* Fix: Handle follow icons editor crash when Elegant page builder is installed.
+* Fix: Theme customize page is misaligned.
+* Fix: Disable share buttons in REST API output.
+* Fix: `null` check when current page URL is not available.
 
 ### 7.8
 * New: Option to save open/close state for floating sharebar with cookies.

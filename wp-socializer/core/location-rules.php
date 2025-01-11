@@ -140,6 +140,10 @@ class WPSR_Location_Rules{
     
     public static function check_rule( $rule_wrap ){
         
+        if( defined( 'REST_REQUEST' ) && REST_REQUEST ){
+            return 0;
+        }
+
         $rule_wrap = WPSR_Lists::set_defaults( $rule_wrap, array(
             'type' => 'show_all',
             'rule' => 'W10='

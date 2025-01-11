@@ -3,14 +3,14 @@
  * Plugin Name:       WP Socializer
  * Plugin URI:        https://www.aakashweb.com/wordpress-plugins/wp-socializer/
  * Description:       Add various social media sharing features to posts/pages/widgets like social media share icons, floating/sticky share bar, follow my profile icons and more.
- * Version:           7.8
+ * Version:           7.9
  * Author:            Aakash Chakravarthy
  * Author URI:        https://www.aakashweb.com
  * Text Domain:       wp-socializer
  * Domain Path:       /languages
  */
 
-define( 'WPSR_VERSION', '7.8' );
+define( 'WPSR_VERSION', '7.9' );
 define( 'WPSR_PATH', plugin_dir_path( __FILE__ ) ); // All have trailing slash
 define( 'WPSR_URL', plugin_dir_url( __FILE__ ) );
 define( 'WPSR_ADMIN_URL', trailingslashit( plugin_dir_url( __FILE__ ) . 'admin' ) );

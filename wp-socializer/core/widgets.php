@@ -44,9 +44,6 @@ class WPSR_Widgets{
     public static function print_widget_scripts( $hook ){
 
         if( $hook == 'widgets.php' ){
-            
-            echo '<script>window.wpsr_ppe_ajax = "' . esc_attr( get_admin_url() . 'admin-ajax.php' ) . '"; </script>';
-            
             wp_enqueue_style( 'wpsr_admin_widget_css', WPSR_ADMIN_URL . 'css/style_widgets.css' );
             wp_enqueue_script( 'wpsr_admin_widget_js', WPSR_ADMIN_URL . 'js/script_widgets.js', array( 'jquery' ) );
             wp_enqueue_script( 'wp-color-picker' );

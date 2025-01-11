@@ -31,7 +31,7 @@ class WPSR_Lists{
     public static function ext_res( $name = 'all' ){
         
         $res = apply_filters( 'wpsr_mod_ext_res', array(
-            'font-awesome-adm' => 'https://use.fontawesome.com/releases/v6.6.0/css/all.css',
+            'font-awesome-adm' => 'https://use.fontawesome.com/releases/v6.7.2/css/all.css',
             'wp-socializer-cl' => 'https://raw.githubusercontent.com/vaakash/vaakash.github.io/master/misc/wp-socializer/changelogs/'
         ));
         
@@ -51,7 +51,7 @@ class WPSR_Lists{
             'fa6' => array(
                 'name' => 'Font Awesome - V6',
                 'type' => 'css',
-                'link' => 'https://use.fontawesome.com/releases/v6.6.0/css/all.css',
+                'link' => 'https://use.fontawesome.com/releases/v6.7.2/css/all.css',
                 'deps' => array(),
                 'version' => WPSR_VERSION
             )
@@ -126,6 +126,16 @@ class WPSR_Lists{
                 'colors' => array( '#FF6501' ),
             ),
             
+            'bluesky' => array(
+                'name' => 'Bluesky',
+                'title' => __('Post this on ', 'wpsr') . 'Bluesky',
+                'icon' => array('fa6' => 'fab fa-bluesky'),
+                'link' => 'https://bsky.app/intent/compose?text={title}%20{url}',
+                'options' => array(),
+                'features' => array( 'for_share', 'for_tsb', 'for_profile' ),
+                'colors' => array( '#1083fe' ),
+            ),
+
             'codepen' => array(
                 'name' => 'CodePen',
                 'title' => __('', 'wpsr') . 'CodePen',
@@ -449,6 +459,16 @@ class WPSR_Lists{
                 'options' => array(),
                 'features' => array( 'for_share' ),
                 'colors' => array( '#EF4056' ),
+            ),
+            
+            'podcast' => array(
+                'name' => 'Podcast',
+                'title' => __('', 'wpsr') . 'Podcast',
+                'icon' => array('fa6' => 'fa fa-podcast'),
+                'link' => '#',
+                'options' => array(),
+                'features' => array( 'for_profile' ),
+                'colors' => array( '#7224d8' ),
             ),
             
             'print' => array(

@@ -270,6 +270,11 @@ class WPSR_Admin_Follow_Icons{
         $hook_suffix = WPSR_Admin::$pagehook;
         set_current_screen( $hook_suffix );
         
+        // Handle crash sometimes when elegant builder plugin is installed
+        if ( !defined('ET_BUILDER_PRODUCT_VERSION') ) {
+            define( 'ET_BUILDER_PRODUCT_VERSION', '4.27.4' );
+        }
+
         iframe_header( 'WP Socializer follow icons editor' );
         
         if( !isset( $_GET[ 'cnt_id' ] ) || !isset( $_GET[ 'prev_id' ] ) ){

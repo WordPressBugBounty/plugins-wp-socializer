@@ -85,7 +85,7 @@ class WPSR_Template_Follow_Icons{
             }
             
             $icon_tag->attrs = array(
-                'rel' => 'nofollow',
+                'rel' => 'nofollow me',
                 'href' => $btn_obj[ $id ][ 'url' ],
                 'target' => '_blank',
                 'title' => ( ( $btn_obj[ $id ][ 'text' ] == '' ) ? $prop[ 'name' ] : urldecode( $btn_obj[ $id ][ 'text' ] ) )

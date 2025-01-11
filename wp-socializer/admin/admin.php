@@ -425,7 +425,7 @@ class WPSR_Admin{
         echo '<h2><i class="fas fa-info-circle"></i> WordPress news</h2>';
         echo '<p>Get updates on the WordPress plugins, tips and tricks to enhance your WordPress experience. No spam.</p>';
 
-    echo '<form class="subscribe_form" action="https://news.aakashweb.com/subscription/form" method="post" target="_blank" novalidate>
+    echo '<form class="subscribe_form" action="https://www.aakashweb.com/apps/subscription/" method="post" target="_blank" novalidate>
         <input type="text" value="' . esc_attr( wp_get_current_user()->user_email ) . '" name="email" class="required subscribe_email_box" placeholder="Your email address">
         <div style="display:none" aria-hidden="true"><input id="6aacb" type="checkbox" name="l" checked="" value="6aacb87c-0434-4ac1-b53c-22d7790ec4ac"></div>
         <input type="submit" value="Subscribe" name="subscribe" class="button subscribe_btn">

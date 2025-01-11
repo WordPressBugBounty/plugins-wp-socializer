@@ -29,14 +29,14 @@ jQuery(document).ready(function(){
     $( document ).on( 'click', '.wpsr_ppe_fb_open', function(e){
         e.preventDefault();
         
-        if( wpsr_ppe_ajax ){
+        if( window.ajaxurl ){
             
             wtmpl_cnt_id = $( this ).attr( 'data-wtmpl-cnt-id' );
             wtmpl_cnt = $( '#' + wtmpl_cnt_id ).val();
             wtmpl_prev_id = $( this ).attr( 'data-wtmpl-prev-id' );
             qstring = 'action=wpsr_follow_icons_editor&cnt_id=' + wtmpl_cnt_id + '&prev_id=' + wtmpl_prev_id;
             
-            wpsr_ipopup_show( wpsr_ppe_ajax + '?' + qstring, '800px', '80%' );
+            wpsr_ipopup_show( window.ajaxurl + '?' + qstring, '800px', '80%' );
             
             $('#wpsr_ipopup_wrap iframe').on('load', function(){
                 var content_window = $('#wpsr_ipopup_wrap iframe')[0].contentWindow;

@@ -39,7 +39,7 @@ class WPSR_Metadata{
             'fb_app_id' => $gs[ 'facebook_app_id' ],
             'fb_app_secret' => $gs[ 'facebook_app_secret' ],
             'comments_section' => $gs[ 'comments_section' ],
-            'raw_url' => $page_info[ 'url' ]
+            'raw_url' => $page_info[ 'url' ] ?? ''
         );
 
         $metadata = array_merge( $page_info, $misc_info );
