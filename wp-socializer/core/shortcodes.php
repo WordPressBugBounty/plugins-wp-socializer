@@ -75,6 +75,8 @@ class WPSR_Shortcodes{
         }
 
         $atts[ 'selected_icons' ] = base64_encode( json_encode( $icons_final ) );
+        $atts[ 'custom_html_above' ] = '';
+        $atts[ 'custom_html_below' ] = '';
 
         $out = WPSR_Template_Share_Icons::html( $atts, $page_info );
         return $out[ 'html' ];

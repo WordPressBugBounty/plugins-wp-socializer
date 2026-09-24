@@ -31,7 +31,7 @@ class WPSR_Lists{
     public static function ext_res( $name = 'all' ){
         
         $res = apply_filters( 'wpsr_mod_ext_res', array(
-            'font-awesome-adm' => 'https://use.fontawesome.com/releases/v6.7.2/css/all.css',
+            'font-awesome-adm' => 'https://use.fontawesome.com/releases/v7.3.1/css/all.css',
             'wp-socializer-cl' => 'https://raw.githubusercontent.com/vaakash/vaakash.github.io/master/misc/wp-socializer/changelogs/'
         ));
         
@@ -51,7 +51,7 @@ class WPSR_Lists{
             'fa6' => array(
                 'name' => 'Font Awesome - V6',
                 'type' => 'css',
-                'link' => 'https://use.fontawesome.com/releases/v6.7.2/css/all.css',
+                'link' => 'https://use.fontawesome.com/releases/v7.3.1/css/all.css',
                 'deps' => array(),
                 'version' => WPSR_VERSION
             )
@@ -156,16 +156,6 @@ class WPSR_Lists{
                 'colors' => array( '#333' ),
             ),
             
-            'delicious' => array(
-                'name' => 'Delicious',
-                'title' => __('Post this on ', 'wpsr') . 'Delicious',
-                'icon' => array('fa6' => 'fab fa-delicious'),
-                'link' => 'https://delicious.com/post?url={url}&title={title}&notes={excerpt}',
-                'options' => array(),
-                'features' => array( 'for_share' ),
-                'colors' => array( '#3274D1' ),
-            ),
-            
             'deviantart' => array(
                 'name' => 'DeviantArt',
                 'title' => __('', 'wpsr') . 'DeviantArt',
@@ -174,16 +164,6 @@ class WPSR_Lists{
                 'options' => array(),
                 'features' => array( 'for_profile' ),
                 'colors' => array( '#475c4d' ),
-            ),
-            
-            'digg' => array(
-                'name' => 'Digg',
-                'title' => __('Submit this to ', 'wpsr') . 'Digg',
-                'icon' => array('fa6' => 'fab fa-digg'),
-                'link' => 'https://digg.com/submit?url={url}&title={title}',
-                'options' => array(),
-                'features' => array( 'for_share' ),
-                'colors' => array( '#000' ),
             ),
             
             'discord' => array(
@@ -279,16 +259,6 @@ class WPSR_Lists{
                 'colors' => array( '#333' ),
             ),
             
-            'google' => array(
-                'name' => 'Google',
-                'title' => __('Bookmark this on ', 'wpsr') . 'Google','',
-                'icon' => array('fa6' => 'fab fa-google'),
-                'link' => 'https://www.google.com/bookmarks/mark?op=edit&bkmk={url}&title={title}&annotation={excerpt}',
-                'options' => array(),
-                'features' => array( 'for_share', 'for_tsb', 'for_profile' ),
-                'colors' => array( '#3A7CEC' ),
-            ),
-            
             'hackernews' => array(
                 'name' => 'Hacker News',
                 'title' => __('Share this on ', 'wpsr') . 'HackerNews',
@@ -370,16 +340,6 @@ class WPSR_Lists{
                 'colors' => array( '#02b875' ),
             ),
             
-            'mix' => array(
-                'name' => 'Mix',
-                'title' => __('', 'wpsr') . 'Mix',
-                'icon' => array('fa6' => 'fab fa-mix'),
-                'link' => 'https://mix.com/mixit?url={url}',
-                'options' => array(),
-                'features' => array( 'for_share' ),
-                'colors' => array( '#ff8226' ),
-            ),
-            
             'native_share' => array(
                 'name' => 'Native Share',
                 'title' => __('', 'wpsr') . 'Share',
@@ -451,16 +411,6 @@ class WPSR_Lists{
                 'colors' => array( '#CB2027' ),
             ),
             
-            'pocket' => array(
-                'name' => 'Pocket',
-                'title' => __('Submit this to ', 'wpsr') . 'Pocket',
-                'icon' => array('fa6' => 'fab fa-get-pocket'),
-                'link' => 'https://getpocket.com/save?url={url}&title={title}',
-                'options' => array(),
-                'features' => array( 'for_share' ),
-                'colors' => array( '#EF4056' ),
-            ),
-            
             'podcast' => array(
                 'name' => 'Podcast',
                 'title' => __('', 'wpsr') . 'Podcast',
@@ -489,16 +439,6 @@ class WPSR_Lists{
                 'options' => array(),
                 'features' => array( 'for_share' ),
                 'colors' => array( '#FF5600' ),
-            ),
-            
-            'renren' => array(
-                'name' => 'Renren',
-                'title' => __('Submit this to ', 'wpsr') . 'Renren',
-                'icon' => array('fa6' => 'fab fa-renren'),
-                'link' => 'https://www.connect.renren.com/share/sharer?url={url}&title={title}',
-                'options' => array(),
-                'features' => array( 'for_share' ),
-                'colors' => array( '#005EAC' ),
             ),
             
             'rss' => array(
@@ -540,16 +480,6 @@ class WPSR_Lists{
                 'options' => array(),
                 'features' => array( 'for_profile' ),
                 'colors' => array( '#FFFC00' ),
-            ),
-            
-            'skype' => array(
-                'name' => 'Skype',
-                'title' => __('', 'wpsr') . 'Skype',
-                'icon' => array('fa6' => 'fab fa-skype'),
-                'link' => 'https://web.skype.com/share?url={url}',
-                'options' => array(),
-                'features' => array( 'for_profile', 'for_share' ),
-                'colors' => array( '#00AFF0' ),
             ),
             
             'soundcloud' => array(
@@ -725,16 +655,6 @@ class WPSR_Lists{
                 'options' => array(),
                 'features' => array( 'for_share', 'for_profile' ),
                 'colors' => array( '#006567' ),
-            ),
-            
-            'yahoomail' => array(
-                'name' => 'Yahoo! Mail',
-                'title' => __('Add this to ', 'wpsr') . 'Yahoo! Mail',
-                'icon' => array('fa6' => 'fab fa-yahoo'),
-                'link' => 'https://compose.mail.yahoo.com/?body={excerpt}%20-%20{url}&subject={title}',
-                'options' => array(),
-                'features' => array( 'for_share', 'for_tsb' ),
-                'colors' => array( '#4A00A1' ),
             ),
             
             'youtube' => array(

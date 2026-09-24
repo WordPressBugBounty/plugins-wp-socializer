@@ -75,7 +75,7 @@ class WPSR_Includes{
 
             'twitter_js' => array(
                 'type' => 'js',
-                'code' => '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
+                'code' => '<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>',
                 'deps' => array(),
                 'version' => WPSR_VERSION
             ),

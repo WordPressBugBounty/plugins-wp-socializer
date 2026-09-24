@@ -1364,7 +1364,7 @@ p.pro_msg{
 /** V5 **/
 /** SIC - Social icons - Common **/
 .sic_backdrop{
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
@@ -1377,7 +1377,7 @@ p.pro_msg{
     background: #fff;
     margin: 0 auto;
     width: 50%;
-    height: 60%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     position: absolute;

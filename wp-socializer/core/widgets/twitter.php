@@ -80,12 +80,12 @@ class WPSR_Twitter_Widget extends WP_Widget {
         echo '<div class="wpsr_widget_wrap">';
 
         $fields->text( 'title', 'Title' );
-        $fields->text( 'twitter_widget_url', 'Enter a twitter URL', array( 'placeholder' => 'Ex: https://twitter.com/vaakash' ) );
+        $fields->text( 'twitter_widget_url', 'Enter a twitter URL', array( 'placeholder' => 'Ex: https://x.com/aakashweb' ) );
 
         echo '<h5>Examples:</h5>';
         echo '<ul>';
-        echo '<li><code>List</code> - https://twitter.com/TwitterDev/lists/national-parks</li>';
-        echo '<li><code>Profile</code> - https://twitter.com/TwitterDev</li>';
+        echo '<li><code>List</code> - https://x.com/i/lists/1234567890123456789</li>';
+        echo '<li><code>Profile</code> - https://x.com/aakashweb</li>';
         echo '</ul>';
 
         $fields->number( 'twitter_widget_height', 'Height ( in pixels )' );
